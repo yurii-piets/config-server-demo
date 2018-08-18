@@ -1,0 +1,11 @@
+encrypt:
+  keyStore:
+    location: classpath:server.jks
+    password: letmein
+    alias: mytestkey
+    secret: changeme
+
+spring:
+  profiles.active: native
+  cloud.config.server.native.search-locations: classpath:config
+  application.name: config-server
